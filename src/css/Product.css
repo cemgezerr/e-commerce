@@ -1,0 +1,38 @@
+.image {
+    width: 180px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 220px;
+    height: 440px;
+    box-shadow: 1px 4px 3px lightgrey;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card:hover {
+    box-shadow: 1px 4px 3px rgb(94, 93, 93);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.detail-btn {
+    border: none;
+    background-color: rgb(207, 120, 27);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.detail-btn:hover {
+    color: rgb(207, 120, 27);
+    background-color: white;
+    border: 1px solid rgb(207, 120, 27);
+    transition: all 0.3s;
+
+}
