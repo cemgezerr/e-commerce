@@ -3,9 +3,12 @@ import { FaShoppingBasket } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [theme, setTheme] = useState(false);
+
+  const navigate = useNavigate()
 
   const changeTheme = () => {
     const root = document.getElementById("root");
@@ -27,7 +30,7 @@ const Header = () => {
         justifyContent: "space-between",
       }}
     >
-      <div className="flex-row">
+      <div className="flex-row" onClick={() => navigate("/")}>
         <img className="logo" src="./src/images/logo.png" />
         <p className="logo-text">Cem AŞ</p>
       </div>
